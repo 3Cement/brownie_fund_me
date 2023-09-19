@@ -11,11 +11,13 @@ compiler:
       - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.3.0'
 dotenv:
   .env
-network:
+networks:
   goerli:
     eth_usd_price_feed: '0x694AA1769357215DE4FAC081bf1f309aDC325306'
     verify: True
   development:
+    verify: False
+  ganache-local:
     verify: False
 wallets:
   from_key: ${PRIVATE_KEY}
